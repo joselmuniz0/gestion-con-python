@@ -1,0 +1,40 @@
+# =============================================================================
+# Football Analytics Platform — Dependencias
+# =============================================================================
+
+# --- Base de datos ---
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0          # PostgreSQL (producción)
+alembic>=1.13.0                  # Migraciones de esquema
+
+# --- Procesamiento de video y visión por computadora ---
+opencv-python>=4.8.0
+ultralytics>=8.0.0               # YOLOv8/v9/v10 + ByteTrack integrado
+numpy>=1.24.0
+
+# --- Ciencia de datos ---
+pandas>=2.0.0
+scipy>=1.11.0                    # ConvexHull, gaussian_filter
+scikit-learn>=1.3.0              # Clustering, clasificación, pipelines ML
+joblib>=1.3.0                    # Serialización de modelos
+
+# --- Visualización ---
+matplotlib>=3.8.0
+seaborn>=0.13.0
+streamlit>=1.30.0
+plotly>=5.17.0                   # Gráficos interactivos en Streamlit
+
+# --- Machine Learning avanzado (opcional) ---
+torch>=2.0.0                     # PyTorch — modelos de secuencias (LSTM, Transformer)
+torchvision>=0.15.0
+
+# --- Utilidades ---
+python-dotenv>=1.0.0             # Carga de variables de entorno
+tqdm>=4.66.0                     # Barras de progreso en pipeline
+loguru>=0.7.0                    # Logging estructurado
+pydantic>=2.0.0                  # Validación de configuración
+click>=8.1.0                     # CLI para ejecutar el pipeline
+
+# --- Testing ---
+pytest>=7.4.0
+pytest-cov>=4.1.0
